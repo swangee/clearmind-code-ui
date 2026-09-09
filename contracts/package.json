@@ -1,0 +1,14 @@
+{
+  "name": "@clearmind/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Generated Connect client for the public clearmind.v1 contracts. Do not edit by hand.",
+  "type": "module",
+  "exports": {
+    "./*": "./*"
+  },
+  "peerDependencies": {
+    "@bufbuild/protobuf": "^1.10.0",
+    "@connectrpc/connect": "^1.6.1"
+  }
+}

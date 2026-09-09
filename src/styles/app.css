@@ -1,0 +1,59 @@
+:root {
+  --text-soft: color-mix(in srgb, var(--color-text) 78%, transparent);
+  --text-muted: color-mix(in srgb, var(--color-text) 64%, transparent);
+  --text-faint: color-mix(in srgb, var(--color-text) 54%, transparent);
+}
+
+.text-soft { color: var(--text-soft); }
+.text-muted { color: var(--text-muted); }
+.text-faint { color: var(--text-faint); }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  padding: 32px;
+}
+
+.page-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.page-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.page-titles h1 { margin: 0; font-size: 25px; }
+
+.page-summary {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.section-head h2,
+.section-head h3 { margin: 0; }
+
+.section-head h3 { font-size: 20px; }
+.section-head h2 { font-size: 16px; }
+
+.section-head > :last-child:not(h2):not(h3) { margin-left: auto; }
